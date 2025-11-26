@@ -1,18 +1,19 @@
 #include "main.h"
 #include <stdarg.h>
-#include <unistd.h>
 #include <stdio.h>
 
 int print_char(va_list ap)
 {
     char c = (char)va_arg(ap, int);
-    return (write(1, &c, 1));
+    putchar(c);
+    return 1;
 }
 
 int print_percent(va_list ap)
 {
     (void)ap;
-    return (write(1, "%", 1));
+    putchar('%');
+    return 1;
 }
 
 int print_string(va_list ap)
@@ -27,9 +28,10 @@ int print_string(va_list ap)
 
     while (str[len] != '\0')
     {
+        putchar(str[len]);
         len++;
     }
-    write(1, str, len);
+    
     return (len);
 }
 

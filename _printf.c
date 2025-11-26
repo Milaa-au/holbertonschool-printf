@@ -5,7 +5,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i = 0, count, temp;
+	int i = 0, count = 0, temp;
 
 	if (format == NULL)
 	{
@@ -18,12 +18,12 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] != '%')
 		{
-			count += putchar(format[i]);
-			i++;
+			 putchar(format[i]);
+			count++;
 		}
 		else
 		{
-			i++;
+			
 			temp = get_func(format[i], args);
 
             if (temp == -1)

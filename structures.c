@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
-#include <stddef.h>
+#include <stdio.h>
 
 int get_func(char s, va_list ap)
 {

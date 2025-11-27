@@ -40,6 +40,7 @@ int _printf(const char *format, ...)
 			i++;
 			if (format[i] == '\0')
 			{
+				count = -1;
             	return (-1);
 			}
 			temp = get_func(format[i], args);
@@ -48,7 +49,6 @@ int _printf(const char *format, ...)
 			{
 				count += putchar('%');
 				count += putchar(format[i]);
-				count += 2;
 			}
 			else
 			{

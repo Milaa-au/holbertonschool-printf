@@ -48,6 +48,7 @@ int _printf(const char *format, ...)
 			{
 				count += putchar('%');
 				count += putchar(format[i]);
+				count += 2;
 			}
 			else
 			{

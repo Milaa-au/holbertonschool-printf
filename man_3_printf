@@ -1,4 +1,5 @@
 .TH _printf 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
+
 .SH NAME
 _printf \- Fonction personnalisée pour afficher une chaîne formatée
 
@@ -38,13 +39,12 @@ Affiche un entier signé au format décimal.
 
 .SH RETURN VALUE
 La fonction renvoie le nombre total de caractères imprimés.
-
 Si
 .I format
-vaut NULL, la fonction retourne \-1.
+vaut NULL, la fonction renvoie \-1.
 
 .SH AUTHORS
-Projet développé par :
+Fonction développée par :
 .br
 \- Alexis Laubert & Mila Audu
 

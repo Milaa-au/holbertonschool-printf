@@ -1,4 +1,4 @@
-.TH _PRINTF 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
+.TH _printf 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
 .SH NOM
 _printf \- Fonction personnalisée pour afficher une chaîne formatée
 
